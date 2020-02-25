@@ -1,14 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -25,180 +14,132 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/JefersonUrbieta/pomodoro">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Pomodoro</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome application of the pomodoro technique!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://jefersonurbieta.github.io/pomodoro">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/JefersonUrbieta/pomodoro/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/JefersonUrbieta/pomodoro/issues">Request Feature</a>
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Idea](#idea-from-app-ideas-collection)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+This application consists of a timer for Pomodoro technique.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+The Pomodoro technique is a time management method developed by Francesco Cirillo in the late 1980s. 
+The technique uses a timer to divide work into intervals, traditionally 25 minutes long, separated by short intervals - 5 minutes.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+The idea of ​​developing this application came from the video [More 80 ideas to learn to program](https://www.youtube.com/watch?v=H4CCPaYLTWg&t) by [Filipe Deschamps](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw) where the [App Ideas Collection](https://github.com/florinpop17/app-ideas) repository of [Florin Pop](https://github.com/florinpop17) was presented. 
+I was very excited about the projects, because the ideas in it are very good for spending time programming.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Looking at more of the [Florin Pop](https://github.com/florinpop17) repositories I discovered this [100Days100Projects](https://github.com/florinpop17/100Days100Projects) and I felt challenged to embark on this challenge.
+From then on, I started to develop some of the ideas from the [App Ideas Collection](https://github.com/florinpop17/app-ideas) repository in order to meet the challenge [100Days100Projects](https://github.com/florinpop17/100Days100Projects).
+
+This project was developed on day 1 of the challenge #100Days100Projects
+
+### Idea from App Ideas Collection
+
+**Tier:** 1-Beginner
+
+The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks - 5 minutes.
+
+#### User Stories
+
+-   [x] User can see a timer for 25 minutes - the **working** session
+-   [x] After the **working** session is over, the User can see a timer for 5 minutes - the **break** session
+-   [x] User can _start_ / _pause_, _stop_ and _reset_ the timers
+
+#### Bonus features
+
+-   [x] User can hear a sound playing when the timer hits `00:00` - denoting that the session has ended
+-   [x] User can change / customize the minutes in both sessions before starting
+-   [ ] User can set a **long break** session of 10 minutes. This will be activated every 4th **break** session
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
+* [Vue.js](https://vuejs.org)
+* [Vuetitl](https://vuetifyjs.com)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This project follows the pattern generated through the [vue-cli](https://cli.vuejs.org)
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+For the development of this application we have the prerequisite
 * npm
-```sh
-npm install npm@latest -g
-```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/JefersonUrbieta/pomodoro.git
 ```
-3. Install NPM packages
+2. Install NPM packages
 ```sh
 npm install
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+4. Compile and run the project
+```sh
+npm run serve
 ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Jeferson Urbieta - [LinkedIn](https://www.linkedin.com/in/jefersonurbieta) - jeferson.urbieta@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
+Project Link: [https://github.com/JefersonUrbieta/pomodoro](https://github.com/JefersonUrbieta/pomodoro)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
-
+* [Thalita Oliveira](https://github.com/thalita12) for help and support
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/JefersonUrbieta/pomodoro.svg?style=flat-square
+[contributors-url]: https://github.com/JefersonUrbieta/pomodoro/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/JefersonUrbieta/pomodoro.svg?style=flat-square
+[forks-url]: https://github.com/JefersonUrbieta/pomodoro/network/members
+[stars-shield]: https://img.shields.io/github/stars/JefersonUrbieta/pomodoro.svg?style=flat-square
+[stars-url]: https://github.com/JefersonUrbieta/pomodoro/stargazers
+[issues-shield]: https://img.shields.io/github/issues/JefersonUrbieta/pomodoro.svg?style=flat-square
+[issues-url]: https://github.com/JefersonUrbieta/pomodoro/issues
+[license-shield]: https://img.shields.io/github/license/JefersonUrbieta/pomodoro.svg?style=flat-square
+[license-url]: https://github.com/JefersonUrbieta/pomodoro/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/jefersonurbieta
 [product-screenshot]: images/screenshot.png
